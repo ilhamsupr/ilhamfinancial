@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilham Financial</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    
+    <!-- Seksi Formulir Login -->
+    <div class="login-container" id="login-container">
+      <h1>Login</h1>
+      <h2>jika kamu belum tahu password dan username nya kamu bisa tanya ke pembuat aplikasi.</h2>
+      <input type="text" id="username" placeholder="Masukkan Nama Pengguna" required />
+      <input type="password" id="password" placeholder="Masukkan Kata Sandi" required />
+      <button class="button-login" id="login-btn">Login</button>
+      <p id="login-error" class="error-message"></p>
+    </div>
+
+    <!-- Seksi Aplikasi Utama (Tersembunyi sampai login) -->
+    <div class="container" id="app-container" style="display:none;">
+      <h1>aplikasi keuangan</h1>
+      <p>semoga aplikasi ini dapat mempermudah keuangan perusahaanmu.</p>
+
+      <!-- Seksi Kelola Inventaris -->
+      <section class="inventory">
+        <h2>Kelola Inventaris</h2>
+        <input type="text" id="item-name" placeholder="Nama Barang" />
+        <input type="number" id="item-price" placeholder="Harga Barang" />
+        <input type="number" id="item-quantity" placeholder="Kuantitas" />
+        <button id="add-item">Tambah Barang</button>
+        <!-- Tabel untuk menampilkan inventaris -->
+        <table id="inventory-table">
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Harga</th>
+              <th>Kuantitas</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="inventory-list">
+            <!-- Daftar inventaris akan ditampilkan di sini -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Seksi Catat Penjualan -->
+      <section class="sales">
+        <h2>Catat Penjualan</h2>
+        <input type="text" id="sale-item" placeholder="Nama Barang" />
+        <input type="number" id="sale-quantity" placeholder="Kuantitas" />
+        <button id="record-sale">Catat Penjualan</button>
+      </section>
+
+      <!-- Seksi Laporan -->
+      <section class="reports">
+        <h2>Laporan</h2>
+        <button id="generate-report">Hasilkan Laporan</button>
+        <div id="report-output"></div>
+      </section>
+
+      <button id="reset">Reset Semua Data</button>
+      <button id="logout-btn">Logout</button>
+
+    </div>
+
+
+    
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

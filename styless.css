@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /* Font dasar untuk seluruh halaman */
+  background-color: #00090c; /* Warna latar belakang */
+  color: #ffffff; /* Warna teks */
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+  align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  height: auto; /* Tinggi otomatis agar sesuai dengan konten */
+  margin: 0; /* Menghapus margin default */
+  text-transform: capitalize; /* Mengubah teks menjadi huruf kapital pada setiap kata */
+}
+
+h1, h2 {
+  text-align: center; /* Menyelaraskan teks heading ke tengah */
+}
+
+/* Input Styles */
+input {
+  padding: 10px; /* Jarak di dalam input */
+  border: 1px solid #ddd; /* Border input */
+  border-radius: 4px; /* Sudut border membulat */
+  margin-right: 10px; /* Jarak antara input dan elemen lain di sebelahnya */
+  box-sizing: border-box; /* Menjamin padding dan border dihitung dalam lebar elemen */
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px; /* Jarak di dalam tombol */
+  border: none; /* Menghapus border default tombol */
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border-radius: 4px; /* Sudut tombol membulat */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+  box-sizing: border-box; /* Menjamin padding dihitung dalam lebar tombol */
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.6); /* Bayangan tombol berwarna aqua */
+  transition: 0.3s ease-in-out; /* Transisi halus untuk perubahan gaya */
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+  box-shadow: 0 6px 12px rgba(0, 255, 255, 0.8); /* Bayangan lebih besar saat hover */
+}
+
+/* Error Message Styles */
+.error-message {
+  color: red; /* Warna teks pesan kesalahan */
+}
+
+/* Login Container Styles */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.2); /* Warna latar belakang dengan transparansi */
+  padding: 40px; /* Jarak di dalam kontainer login */
+  border-radius: 8px; /* Sudut kontainer membulat */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+  width: 100%; /* Lebar kontainer 100% dari elemen induknya */
+  max-width: 500px; /* Lebar maksimum kontainer */
+  box-sizing: border-box; /* Menjamin padding dihitung dalam lebar kontainer */
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  flex-direction: column; /* Mengatur elemen dalam kontainer secara vertikal */
+  align-items: center; /* Menempatkan elemen di tengah secara horizontal */
+  justify-content: center; /* Menempatkan elemen di tengah secara vertikal */
+  height: auto; /* Tinggi otomatis sesuai konten */
+}
+
+.login-container:hover {
+  background: linear-gradient(135deg, #6a11cb 0%, #0c92bb 100%); /* Gradien saat hover */
+}
+
+.button-login {
+  width: 100%; /* Tombol memenuhi lebar kontainer */
+  max-width: 200px; /* Lebar maksimum tombol */
+  margin-top: 20px; /* Jarak di atas tombol */
+  background-color: rgba(0, 123, 255, 0.2); /* Warna latar belakang tombol dengan transparansi */
+}
+
+/* Container Styles */
+.container {
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  flex-direction: column; /* Mengatur elemen dalam kontainer secara vertikal */
+  align-items: center; /* Menempatkan elemen di tengah secara horizontal */
+  width: 100%; /* Lebar kontainer 100% dari elemen induknya */
+  max-width: 1200px; /* Lebar maksimum kontainer */
+  padding: 20px; /* Jarak di dalam kontainer */
+  box-sizing: border-box; /* Menjamin padding dihitung dalam lebar kontainer */
+}
+
+/* List Styles */
+ul {
+  list-style-type: none; /* Menghapus bullet points dari daftar */
+  padding: 0; /* Menghapus padding default */
+}
+
+li {
+  padding: 5px 0; /* Jarak di dalam item daftar */
+  margin-top: 10px; /* Jarak di atas item daftar */
+  border-bottom: 1px solid #ddd; /* Garis bawah untuk item daftar */
+}
+
+button.delete-item {
+  background-color: red; /* Warna latar belakang tombol hapus */
+  color: white; /* Warna teks tombol hapus */
+  margin-left: 10px; /* Jarak di sebelah kiri tombol hapus */
+  border: none; /* Menghapus border default tombol hapus */
+  padding: 2px 5px; /* Jarak di dalam tombol hapus */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+}
+
+button.delete-item:hover {
+  background-color: darkred; /* Warna latar belakang tombol hapus saat hover */
+}
+
+/* Table Styles */
+#inventory-table {
+  width: 100%; /* Lebar tabel 100% dari elemen induknya */
+  border-collapse: collapse; /* Menghapus jarak antara border tabel */
+  margin-top: 20px; /* Jarak di atas tabel */
+}
+
+#inventory-table th, #inventory-table td {
+  border: 1px solid #ffffff; /* Border tabel */
+  padding: 10px; /* Jarak di dalam sel tabel */
+  text-align: left; /* Penjajaran teks di kiri */
+}
+
+#inventory-table th {
+  background-color: #050505; /* Warna latar belakang header tabel */
+}
+
+#inventory-table tr:nth-child(even) {
+  background-color: #000000; /* Warna latar belakang baris genap tabel */
+}
+
+/* Button Reset Styles */
+#reset {
+  background-color: #dc3545; /* Warna latar belakang tombol reset */
+  margin-top: 20px; /* Jarak di atas tombol reset */
+  padding: 10px 20px; /* Jarak di dalam tombol reset */
+  border-radius: 4px; /* Sudut tombol reset membulat */
+}
+
+#reset:hover {
+  background-color: #c82333; /* Warna latar belakang tombol reset saat hover */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* Jarak di dalam body untuk layar kecil */
+    height: auto; /* Tinggi otomatis sesuai konten */
+  }
+
+  .login-container {
+    padding: 15px; /* Jarak di dalam kontainer login untuk layar kecil */
+    width: 100%; /* Lebar kontainer 100% dari elemen induknya */
+    max-width: 400px; /* Lebar maksimum kontainer login untuk layar kecil */
+    margin: 0 auto; /* Menempatkan kontainer di tengah secara horizontal */
+  }
+
+  input {
+    width: calc(100% - 20px); /* Lebar input agar sesuai dengan kontainer */
+    margin-bottom: 10px; /* Jarak di bawah input */
+  }
+
+  button {
+    width: auto; /* Lebar tombol otomatis */
+    max-width: 100%; /* Lebar maksimum tombol */
+    padding: 10px; /* Jarak di dalam tombol */
+    display: block; /* Menampilkan tombol sebagai blok */
+    margin: 10px auto; /* Jarak di atas dan bawah tombol, dan menempatkan tombol di tengah secara horizontal */
+  }
+
+  .button-login {
+    width: calc(100% - 20px); /* Lebar tombol login agar sesuai dengan kontainer */
+    margin-bottom: 10px; /* Jarak di bawah tombol login */
+  }
+
+  button.delete-item {
+    font-size: 0.8em; /* Ukuran font tombol hapus */
+    padding: 5px 10px; /* Jarak di dalam tombol hapus */
+  }
+
+  /* Table Container Styles for Responsive Design */
+  .table-container {
+    max-width: 100%; /* Lebar maksimum kontainer tabel */
+    overflow-x: auto; /* Menambahkan scroll horizontal jika diperlukan */
+  }
+
+  table {
+    width: 100%; /* Lebar tabel 100% dari elemen induknya */
+    table-layout: fixed; /* Menetapkan layout tabel agar kolom memiliki lebar tetap */
+    border-collapse: collapse; /* Menghapus jarak antara border tabel */
+  }
+
+  th, td {
+    padding: 8px 12px; /* Jarak di dalam sel tabel */
+    text-align: left; /* Penjajaran teks di kiri */
+    border: 1px solid #ddd; /* Border tabel */
+    white-space: normal; /* Memungkinkan teks untuk membungkus ke baris baru */
+    word-wrap: break-word; /* Memungkinkan pemutusan kata jika terlalu panjang */
+  }
+
+  th {
+    background-color: #ffffff; /* Warna latar belakang header tabel */
+    font-weight: bold; /* Menebalkan teks header tabel */
+  }
+}
